@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ConsoleApp21
 {
-    class productreview
+  public  class productreview
     {
      public int productid {get; set;}
      public int userid {get; set;}

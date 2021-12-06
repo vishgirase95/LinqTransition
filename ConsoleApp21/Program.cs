@@ -7,7 +7,7 @@ namespace ConsoleApp21
     {
         static void Main(string[] args)
         {
-            List<productreview> productreviewlist = new List<productreview>()
+            List<productreview> ListProductReview = new List<productreview>()
             {
                 new productreview(){productid=1,userid=1,rating=5,review="good",islike=true},
                 new productreview(){productid=2,userid=2,rating=4,review="good",islike=true},
@@ -18,13 +18,13 @@ namespace ConsoleApp21
                 new productreview(){productid=7,userid=7,rating=1,review="bad",islike=true},
                 new productreview(){productid=8,userid=8,rating=2,review="better",islike=false}
             };
-            foreach (var item in productreviewlist)
-            {
-                Console.Write($"\n\nproductid= {item.productid}\nuserid= {item.userid}\nrating= {item.rating}\nreview= {item.review}\nisLike= {item.islike}");
-            }
-            {
 
-            }
+            //foreach (var item in productreviewlist)
+            //{
+            //    Console.Write($"\n\nproductid= {item.productid}\nuserid= {item.userid}\nrating= {item.rating}\nreview= {item.review}\nisLike= {item.islike}");
+            //}
+            managemnet obj = new managemnet();
+            obj.TopRecords(ListProductReview);
         }
     }
 }
