@@ -24,7 +24,8 @@ namespace ConsoleApp21
             //    Console.Write($"\n\nproductid= {item.productid}\nuserid= {item.userid}\nrating= {item.rating}\nreview= {item.review}\nisLike= {item.islike}");
             //}
             managemnet obj = new managemnet();
-            obj.TopRecords(ListProductReview);
+            //obj.TopRecords(ListProductReview);
+            obj.selectrecords(ListProductReview);
         }
     }
 }
